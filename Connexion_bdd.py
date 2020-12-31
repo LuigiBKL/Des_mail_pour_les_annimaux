@@ -79,6 +79,7 @@ class Connexion :
 
         self.cursor.execute("UPDATE apprenant SET mail = '%s' WHERE id_apprenant = '%s'"%(mail, id_apprenant))
         self.connexion.commit()
+        print("Insertion terminée avec succes")
         self.cursor.close()
         self.connexion.close()
 
